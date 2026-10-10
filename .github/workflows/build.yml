@@ -144,7 +144,21 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libx11-dev pkg-config cmake ninja-build libsecret-1-dev
+          sudo apt-get install -y \
+            clang \
+            cmake \
+            ninja-build \
+            pkg-config \
+            libgtk-3-dev \
+            liblzma-dev \
+            libstdc++-12-dev \
+            libx11-dev \
+            libsecret-1-dev \
+            libjson-glib-dev \
+            libayatana-appindicator3-dev \
+            librsvg2-dev \
+            libkeybinder-3-dev
+          pkg-config --modversion libsecret-1 || echo "libsecret-1 not found"
 
       - name: Download frpc (Linux amd64)
         run: |
@@ -187,7 +201,21 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libx11-dev pkg-config cmake ninja-build libsecret-1-dev
+          sudo apt-get install -y \
+            clang \
+            cmake \
+            ninja-build \
+            pkg-config \
+            libgtk-3-dev \
+            liblzma-dev \
+            libstdc++-12-dev \
+            libx11-dev \
+            libsecret-1-dev \
+            libjson-glib-dev \
+            libayatana-appindicator3-dev \
+            librsvg2-dev \
+            libkeybinder-3-dev
+          pkg-config --modversion libsecret-1 || echo "libsecret-1 not found"
 
       - name: Download frpc (Linux arm64)
         run: |
