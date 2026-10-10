@@ -156,8 +156,7 @@ jobs:
             libsecret-1-dev \
             libjson-glib-dev \
             libayatana-appindicator3-dev \
-            librsvg2-dev \
-            libkeybinder-3-dev
+            librsvg2-dev
           pkg-config --modversion libsecret-1 || echo "libsecret-1 not found"
 
       - name: Download frpc (Linux amd64)
@@ -213,8 +212,7 @@ jobs:
             libsecret-1-dev \
             libjson-glib-dev \
             libayatana-appindicator3-dev \
-            librsvg2-dev \
-            libkeybinder-3-dev
+            librsvg2-dev
           pkg-config --modversion libsecret-1 || echo "libsecret-1 not found"
 
       - name: Download frpc (Linux arm64)
